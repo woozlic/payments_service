@@ -10,7 +10,3 @@ from users.routers import router
 app = FastAPI()
 app.include_router(router)
 
-
-@router.get('/me')
-async def me(session: AsyncSession = Depends(get_session)):
-    return {'hello': 'world'}
