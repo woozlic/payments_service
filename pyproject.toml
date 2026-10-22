@@ -2,4 +2,9 @@
 name = "payments-service"
 version = "0.1.0"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "alembic>=1.20.1",
+    "asyncpg>=0.32.0",
+    "fastapi[standard]>=0.159.1",
+    "sqlalchemy[asyncio]>=2.1.6",
+]
